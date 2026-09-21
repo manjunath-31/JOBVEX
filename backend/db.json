@@ -1,0 +1,292 @@
+{
+  "jobs": [
+    {
+      "id": "J101",
+      "title": "Service Associate - Global Data Management",
+      "company": "Deloitte",
+      "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&auto=format&fit=crop&q=80",
+      "type": "fulltime",
+      "batch": "2023-2026 Batch",
+      "location": "Hyderabad / Bengaluru",
+      "salary": "₹6.5 - ₹8.5 LPA",
+      "postedAgo": "2 hours ago",
+      "description": "Deloitte is one of the world's leading professional services firms. As a Service Associate in Global Data Management, you will perform data validation, ensure compliance with data governance standards, and collaborate with international client teams.",
+      "requirements": [
+        "Bachelor's degree in CS, IT, Business, or related fields (2023, 2024, 2025, 2026 graduates)",
+        "Strong analytical skills and attention to detail",
+        "Proficiency in Excel, SQL, or Python data validation tools",
+        "Excellent written and verbal communication skills"
+      ],
+      "applyUrl": "https://usijobs.deloitte.com",
+      "creatorName": "TechCareers India",
+      "creatorBadge": "Top Creator",
+      "views": 1420,
+      "applicationsCount": 289
+    },
+    {
+      "id": "J102",
+      "title": "Data Analyst Intern",
+      "company": "Portcast",
+      "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=100&auto=format&fit=crop&q=80",
+      "type": "internship",
+      "batch": "2025-2026 Batch",
+      "location": "Remote (India)",
+      "salary": "₹25,000 / month Stipend",
+      "postedAgo": "5 hours ago",
+      "description": "Portcast is a venture-backed logistics technology startup headquartered in Singapore. We are seeking a Data Analyst Intern to build real-time logistics analytics dashboards and assist in machine learning model evaluation.",
+      "requirements": [
+        "Currently pursuing B.Tech/B.E/B.Sc in CS or Statistics",
+        "Hands-on experience with SQL, Pandas, and Tableau/PowerBI",
+        "Ability to work independently in a remote fast-paced environment"
+      ],
+      "applyUrl": "https://portcast.io/careers",
+      "creatorName": "DataJobsX",
+      "creatorBadge": "Verified Creator",
+      "views": 980,
+      "applicationsCount": 164
+    },
+    {
+      "id": "J103",
+      "title": "QA Engineer (Freshers)",
+      "company": "Micro1.ai",
+      "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100&auto=format&fit=crop&q=80",
+      "type": "remote",
+      "batch": "2024-2026 Batch",
+      "location": "Remote (India)",
+      "salary": "₹8.0 - ₹10.0 LPA",
+      "postedAgo": "1 day ago",
+      "description": "Micro1 is an emerging technology services firm specializing in building AI-enabled solutions. You will participate in automated API testing, regression test suites, and AI model output quality assurance.",
+      "requirements": [
+        "B.Tech in CS/IT or equivalent degree",
+        "Understanding of Software Testing Lifecycle (STLC) & Selenium/Cypress basics",
+        "Strong problem-solving mindset and debugging capabilities"
+      ],
+      "applyUrl": "https://micro1.ai/careers",
+      "creatorName": "FreshersHub",
+      "creatorBadge": "Top Creator",
+      "views": 2150,
+      "applicationsCount": 412
+    },
+    {
+      "id": "J104",
+      "title": "Graduate Engineer Trainee (GET)",
+      "company": "Wipro",
+      "companyLogo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=100&auto=format&fit=crop&q=80",
+      "type": "fulltime",
+      "batch": "2024-2025 Batch",
+      "location": "Pan India Locations",
+      "salary": "₹4.5 - ₹6.0 LPA",
+      "postedAgo": "1 day ago",
+      "description": "Wipro Limited has launched its National Qualifier Test for GET roles across Cloud, Full Stack Engineering, DevOps, and Cybersecurity practices. Join our intensive 6-month training program followed by full-time project alignment.",
+      "requirements": [
+        "B.E/B.Tech/M.E/M.Tech/MCA/M.Sc with 60% or 6.0 CGPA throughout academics",
+        "Basic coding proficiency in C++, Java, or Python",
+        "No active backlogs at the time of onboarding"
+      ],
+      "applyUrl": "https://careers.wipro.com",
+      "creatorName": "CampusPlacementOfficial",
+      "creatorBadge": "Verified Creator",
+      "views": 4320,
+      "applicationsCount": 980
+    },
+    {
+      "id": "J105",
+      "title": "Software Engineer / Associate Product Role",
+      "company": "ProArch",
+      "companyLogo": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=100&auto=format&fit=crop&q=80",
+      "type": "wfh",
+      "batch": "2023-2026 Batch",
+      "location": "Work From Home",
+      "salary": "₹7.0 - ₹9.5 LPA",
+      "postedAgo": "2 days ago",
+      "description": "ProArch is a global software consultancy specializing in cloud, data, AI, and cybersecurity. We are hiring Software Engineer trainees who have a flair for user product thinking and React/Node.js web stack.",
+      "requirements": [
+        "Proficiency in modern JavaScript (ES6+), HTML5, CSS3, and React.js",
+        "Familiarity with REST APIs, Git, and Agile methodologies",
+        "Great collaborative mindset and self-learning capabilities"
+      ],
+      "applyUrl": "https://proarch.com/careers",
+      "creatorName": "CodeDrive",
+      "creatorBadge": "Verified Creator",
+      "views": 1840,
+      "applicationsCount": 310
+    },
+    {
+      "id": "J106",
+      "title": "Associate Product Designer",
+      "company": "Microsoft",
+      "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100&auto=format&fit=crop&q=80",
+      "type": "fulltime",
+      "batch": "2024-2026 Batch",
+      "location": "Hyderabad / Noida",
+      "salary": "₹16.0 - ₹22.0 LPA",
+      "postedAgo": "2 days ago",
+      "description": "Microsoft is seeking Associate Product Designers to join our India Development Center (IDC). You will craft intuitive user interfaces for enterprise productivity tools used by millions worldwide.",
+      "requirements": [
+        "Bachelor's or Master's degree in Design, HCI, CS, or relevant portfolio experience",
+        "Proficiency in Figma, user prototyping, wireframing, and design systems",
+        "Strong visual design skills and user research mindset"
+      ],
+      "applyUrl": "https://careers.microsoft.com",
+      "creatorName": "DesignHub",
+      "creatorBadge": "Top Creator",
+      "views": 5600,
+      "applicationsCount": 1120
+    },
+    {
+      "id": "J107",
+      "title": "DevOps Intern",
+      "company": "CloudDraft",
+      "companyLogo": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=100&auto=format&fit=crop&q=80",
+      "type": "internship",
+      "batch": "2025-2026 Batch",
+      "location": "Remote (India)",
+      "salary": "₹20,000 / month Stipend",
+      "postedAgo": "3 days ago",
+      "description": "CloudDraft builds continuous deployment tools for cloud native applications. As a DevOps Intern, you will work on Docker containerization, Kubernetes cluster maintenance, and GitHub Actions CI/CD pipelines.",
+      "requirements": [
+        "Hands-on experience with Linux CLI, Bash scripting, and Git",
+        "Understanding of AWS/Azure fundamentals and Docker",
+        "Eagerness to automate cloud infrastructure tasks"
+      ],
+      "applyUrl": "https://clouddraft.io/jobs",
+      "creatorName": "CloudArchitects",
+      "creatorBadge": "Verified Creator",
+      "views": 750,
+      "applicationsCount": 140
+    },
+    {
+      "id": "J108",
+      "title": "SEO & Content Writing Intern",
+      "company": "CloudStuff",
+      "companyLogo": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=100&auto=format&fit=crop&q=80",
+      "type": "internship",
+      "batch": "2024-2026 Batch",
+      "location": "Work From Home",
+      "salary": "₹15,000 / month Stipend",
+      "postedAgo": "3 days ago",
+      "description": "CloudStuff is a digital marketing startup helping global brands grow online. We are looking for energetic content writers to craft high-ranking blog articles, tech tutorials, and SEO metadata.",
+      "requirements": [
+        "Excellent written English and grammar skills",
+        "Basic understanding of SEO tools like Ahrefs, SEMrush, or Google Search Console",
+        "Ability to write engaging short-form and long-form tech posts"
+      ],
+      "applyUrl": "https://cloudstuff.agency/careers",
+      "creatorName": "ContentGuild",
+      "creatorBadge": "Verified Creator",
+      "views": 620,
+      "applicationsCount": 115
+    },
+    {
+      "title": "Associate doveloper",
+      "company": "LG soft india",
+      "type": "fulltime",
+      "batch": "2023-2026 Batch",
+      "location": "Bengaluru",
+      "salary": "4.9lpa",
+      "applyUrl": "https://www.lgsoftindia.com/",
+      "description": "",
+      "requirements": [
+        "Relevant degree for 2023-2026 batch candidates",
+        "Strong domain skills"
+      ],
+      "id": "N16X0qXoXdM",
+      "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&auto=format&fit=crop&q=80",
+      "postedAgo": "Just now",
+      "creatorName": "Creator Hub User",
+      "creatorBadge": "Verified Creator",
+      "views": 1,
+      "applicationsCount": 0
+    },
+    {
+      "title": "Associate Software Doveloper",
+      "company": "HclTech",
+      "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&auto=format&fit=crop&q=80",
+      "type": "fulltime",
+      "batch": "2023-2026 Batch",
+      "location": "Bengaluru",
+      "salary": "7.5 LPA",
+      "applyUrl": "https://careers.hcltech.com/",
+      "description": "HCLTech – Associate Software Developer Job Description\n\nAs an Associate Software Developer at HCLTech, you will be responsible for designing, developing, testing, debugging, and maintaining software applications based on business and client requirements. The role involves writing clean and efficient code, understanding technical specifications, developing new features, fixing bugs, troubleshooting application issues, and collaborating with other developers and technical teams. You may also be involved in database operations, API development, application testing, documentation, and supporting existing software systems. The role requires good programming knowledge, problem-solving and analytical skills, understanding of OOPs, Data Structures and Algorithms, SQL/DBMS, web technologies, REST APIs, Git, and the ability to learn and work with different technologies according to project requirements.",
+      "requirements": [
+        "Requirements & Qualifications",
+        "Bachelor’s degree in Computer Science, Information Technology, Electronics & Communication Engineering, or a related technical field.",
+        "Strong knowledge of Python, Java, C++, or JavaScript, with a good understanding of OOPs, Data Structures & Algorithms, SQL, and DBMS.",
+        "Basic knowledge of HTML, CSS, JavaScript, REST APIs, Git/GitHub, and web development is an added advantage.",
+        "Good problem-solving, analytical, communication, teamwork, and debugging skills with a willingness to learn new technologies.",
+        "Freshers and candidates with limited experience may be eligible depending on the specific HCLTech job opening."
+      ],
+      "id": "J1789795032157",
+      "postedAgo": "Just now",
+      "creatorName": "JOBVEX Admin",
+      "creatorBadge": "Verified Admin",
+      "views": 1,
+      "applicationsCount": 0
+    }
+  ],
+  "creators": [
+    {
+      "id": "C1",
+      "name": "TechCareers India",
+      "badge": "Top Creator",
+      "jobsPosted": 42,
+      "totalViews": "120K+",
+      "earnings": "₹48,500"
+    },
+    {
+      "id": "C2",
+      "name": "FreshersHub",
+      "badge": "Top Creator",
+      "jobsPosted": 88,
+      "totalViews": "310K+",
+      "earnings": "₹1,12,000"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "B1",
+      "title": "Top 10 Technical Questions Asked in Off-Campus Fresher Interviews (2026)",
+      "category": "Interview Prep",
+      "readTime": "5 min read",
+      "date": "Sep 10, 2026",
+      "snippet": "A comprehensive guide covering DSA patterns, SQL joins, System Design basics, and OOP concepts frequently tested by product companies."
+    },
+    {
+      "id": "B2",
+      "title": "How to Build an ATS-Friendly Resume for 2026 Campus Drives",
+      "category": "Resume Tips",
+      "readTime": "4 min read",
+      "date": "Sep 08, 2026",
+      "snippet": "Learn action verbs, keyword optimization, project descriptions, and structural formatting to beat applicant tracking systems automatically."
+    },
+    {
+      "id": "B3",
+      "title": "Mastering English Communication for Tech Interviews via VoiceRooms",
+      "category": "Communication",
+      "readTime": "6 min read",
+      "date": "Sep 05, 2026",
+      "snippet": "Why conversational practice beats silent reading when preparing for HR and managerial rounds."
+    }
+  ],
+  "voicerooms": [
+    {
+      "id": "VR1",
+      "topic": "Software Developer Interview Prep",
+      "activeUsers": 128,
+      "category": "Interview Practice"
+    },
+    {
+      "id": "VR2",
+      "topic": "English Speaking Confidence",
+      "activeUsers": 240,
+      "category": "Fluency"
+    },
+    {
+      "id": "VR3",
+      "topic": "Casual Fresher Networking & Salary Talk",
+      "activeUsers": 95,
+      "category": "Networking"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
