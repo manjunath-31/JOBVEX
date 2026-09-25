@@ -1,29 +1,66 @@
-import { Briefcase, Facebook, Heart, Instagram, Linkedin, MessageCircle } from "lucide-react";
+import { Briefcase, Heart, MessageCircle } from "lucide-react";
 
 const socialLinks = [
-  { label: "Instagram", href: "https://www.instagram.com/jobvexia/", Icon: Instagram },
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/jobvex/", Icon: Linkedin },
-  { label: "Facebook", href: "https://www.facebook.com/jobvexia/", Icon: Facebook },
-  { label: "WhatsApp Channel", href: "https://www.https://whatsapp.com/channel/0029VbDcfgvH5JLv7eSNwD23.com/", Icon: MessageCircle },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/jobvexia/",
+    Icon: () => <span className="social-text-icon">◎</span>,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/jobvex/",
+    Icon: () => <span className="social-text-icon">in</span>,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/jobvexia/",
+    Icon: () => <span className="social-text-icon">f</span>,
+  },
+  {
+    label: "WhatsApp Channel",
+    href: "https://www.whatsapp.com/channel/0029VbDcfgvH5JLv7eSNwD23",
+    Icon: MessageCircle,
+  },
 ];
 
 export default function Footer({ setActiveTab }) {
+  const handleBrandKeyDown = (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      setActiveTab("jobs");
+    }
+  };
+
   return (
     <footer className="jobvex-footer">
       <div className="footer-container">
-        {/* Brand column */}
         <div className="footer-brand">
-          <div className="brand-logo" onClick={() => setActiveTab("jobs")}>
+          <div
+            className="brand-logo"
+            onClick={() => setActiveTab("jobs")}
+            onKeyDown={handleBrandKeyDown}
+            role="button"
+            tabIndex={0}
+          >
             <div className="logo-icon">
               <Briefcase size={20} className="logo-svg" />
             </div>
+
             <div className="brand-name">JOBVEX</div>
           </div>
+
           <p className="footer-tagline">
-            India's most trusted job index for freshers. 1,000+ creators. Thousands of verified off-campus job & internship listings updated daily.
+            India&apos;s most trusted job index for freshers. 1,000+ creators.
+            Thousands of verified off-campus job &amp; internship listings
+            updated daily.
           </p>
-          <div className="footer-social" aria-label="JOBVEX social channels">
+
+          <div
+            className="footer-social"
+            aria-label="JOBVEX social channels"
+          >
             <span>Follow JOBVEX</span>
+
             <div className="social-links">
               {socialLinks.map(({ label, href, Icon }) => (
                 <a
@@ -42,34 +79,59 @@ export default function Footer({ setActiveTab }) {
           </div>
         </div>
 
-        {/* Quick Links */}
         <div className="footer-links-col">
           <h4>Quick Navigation</h4>
+
           <ul>
-            <li onClick={() => setActiveTab("jobs")}>Latest Fresher Jobs</li>
-            <li onClick={() => setActiveTab("jobs")}>Internships with Stipend</li>
-            <li onClick={() => setActiveTab("jobs")}>Work From Home & Remote</li>
-            <li onClick={() => setActiveTab("voiceroom")}>VoiceRoom Talk Zone</li>
-            <li onClick={() => setActiveTab("blog")}>Interview Prep Blog</li>
+            <li onClick={() => setActiveTab("jobs")}>
+              Latest Fresher Jobs
+            </li>
+
+            <li onClick={() => setActiveTab("jobs")}>
+              Internships with Stipend
+            </li>
+
+            <li onClick={() => setActiveTab("jobs")}>
+              Work From Home &amp; Remote
+            </li>
+
+            <li onClick={() => setActiveTab("voiceroom")}>
+              VoiceRoom Talk Zone
+            </li>
+
+            <li onClick={() => setActiveTab("blog")}>
+              Interview Prep Blog
+            </li>
           </ul>
         </div>
 
-        {/* Company */}
         <div className="footer-links-col">
-          <h4>Company & Support</h4>
+          <h4>Company &amp; Support</h4>
+
           <ul>
-            <li onClick={() => setActiveTab("about")}>About JOBVEX</li>
-            <li onClick={() => setActiveTab("contact")}>Contact Support</li>
-            <li onClick={() => setActiveTab("about")}>FAQ & Safety Tips</li>
-            <li onClick={() => setActiveTab("creator")}>Become a Creator</li>
+            <li onClick={() => setActiveTab("about")}>
+              About JOBVEX
+            </li>
+
+            <li onClick={() => setActiveTab("contact")}>
+              Contact Support
+            </li>
+
+            <li onClick={() => setActiveTab("about")}>
+              FAQ &amp; Safety Tips
+            </li>
+
+            <li onClick={() => setActiveTab("creator")}>
+              Become a Creator
+            </li>
           </ul>
         </div>
 
-        {/* Legal Disclaimer */}
         <div className="footer-links-col">
-          <h4>Legal & Safety</h4>
+          <h4>Legal &amp; Safety</h4>
+
           <ul>
-            <li>Terms & Conditions</li>
+            <li>Terms &amp; Conditions</li>
             <li>Privacy Policy</li>
             <li>Community Guidelines</li>
             <li>Recruiter Verification</li>
@@ -78,9 +140,21 @@ export default function Footer({ setActiveTab }) {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 JOBVEX. All rights reserved. Built with <Heart size={14} color="#ef4444" fill="#ef4444" /> for freshers across India.</p>
+        <p>
+          © 2026 JOBVEX. All rights reserved. Built with{" "}
+          <Heart
+            size={14}
+            color="#ef4444"
+            fill="#ef4444"
+            aria-hidden="true"
+          />{" "}
+          for freshers across India.
+        </p>
+
         <p className="legal-disclaimer">
-          Job opportunities on JOBVEX are curated and verified by our creator network. We do not guarantee employment. Always verify details on the official company website before applying.
+          Job opportunities on JOBVEX are curated and verified by our creator
+          network. We do not guarantee employment. Always verify details on the
+          official company website before applying.
         </p>
       </div>
     </footer>
