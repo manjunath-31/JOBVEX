@@ -1,20 +1,25 @@
 import { Briefcase, Heart, MessageCircle } from "lucide-react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa6";
 
 const socialLinks = [
   {
     label: "Instagram",
     href: "https://www.instagram.com/jobvexia/",
-    Icon: () => <span className="social-text-icon">◎</span>,
+    Icon: FaInstagram,
   },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/company/jobvex/",
-    Icon: () => <span className="social-text-icon">in</span>,
+    Icon: FaLinkedinIn,
   },
   {
     label: "Facebook",
     href: "https://www.facebook.com/jobvexia/",
-    Icon: () => <span className="social-text-icon">f</span>,
+    Icon: FaFacebookF,
   },
   {
     label: "WhatsApp Channel",
@@ -68,7 +73,7 @@ export default function Footer({ setActiveTab }) {
                   className="social-link"
                   href={href}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   aria-label={`JOBVEX on ${label}`}
                   title={label}
                 >
