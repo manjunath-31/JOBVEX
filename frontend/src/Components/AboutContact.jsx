@@ -187,17 +187,17 @@ export default function AboutContact({ mode = "about" }) {
             <div className="contact-details">
               <div className="contact-item">
                 <Mail size={18} />
-                <span>support@jobvex.com</span>
+                <span>smsgroups3in1@gmail.com</span>
               </div>
 
               <div className="contact-item">
                 <PhoneCall size={18} />
-                <span>+91 (080) 4567-8900 — Monday to Friday</span>
+                <span>+91 8147927837 — Monday to Friday</span>
               </div>
 
               <div className="contact-item">
                 <MapPin size={18} />
-                <span>Tech Park, Outer Ring Road, Bengaluru, Karnataka</span>
+                <span>BTM ,2nd Stage Bengaluru, Karnataka</span>
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function AboutContact({ mode = "about" }) {
                 <input
                   id="contact-name"
                   type="text"
-                  placeholder="e.g. Rahul Sharma"
+                  placeholder="e.g. Manju Simha"
                   value={contactForm.name}
                   onChange={(event) =>
                     updateFormField("name", event.target.value)
@@ -225,7 +225,7 @@ export default function AboutContact({ mode = "about" }) {
                 <input
                   id="contact-email"
                   type="email"
-                  placeholder="rahul@example.com"
+                  placeholder="manju@example.com"
                   value={contactForm.email}
                   onChange={(event) =>
                     updateFormField("email", event.target.value)
