@@ -1,4 +1,11 @@
-import { Briefcase, Heart } from "lucide-react";
+import { Briefcase, Facebook, Heart, Instagram, Linkedin, MessageCircle } from "lucide-react";
+
+const socialLinks = [
+  { label: "Instagram", href: "https://www.instagram.com/jobvexia/", Icon: Instagram },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/jobvex/", Icon: Linkedin },
+  { label: "Facebook", href: "https://www.facebook.com/jobvexia/", Icon: Facebook },
+  { label: "WhatsApp Channel", href: "https://www.https://whatsapp.com/channel/0029VbDcfgvH5JLv7eSNwD23.com/", Icon: MessageCircle },
+];
 
 export default function Footer({ setActiveTab }) {
   return (
@@ -15,6 +22,24 @@ export default function Footer({ setActiveTab }) {
           <p className="footer-tagline">
             India's most trusted job index for freshers. 1,000+ creators. Thousands of verified off-campus job & internship listings updated daily.
           </p>
+          <div className="footer-social" aria-label="JOBVEX social channels">
+            <span>Follow JOBVEX</span>
+            <div className="social-links">
+              {socialLinks.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  className="social-link"
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`JOBVEX on ${label}`}
+                  title={label}
+                >
+                  <Icon size={18} aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Quick Links */}
