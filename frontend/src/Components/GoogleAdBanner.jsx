@@ -1,35 +1,33 @@
-import { ExternalLink, Info, Sparkles } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export default function GoogleAdBanner() {
-  const ad = {
-    sponsor: "Google Career Certificates",
-    headline: "Accelerate your tech career with Google Credentials",
-    tagline: "Learn Python, Cyber Security, Cloud, or Project Management at your own pace. 100% online.",
-    cta: "Explore Courses",
-    url: "https://grow.google/certificates",
-    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=400&auto=format&fit=crop&q=80"
-  };
+  const adRef = useRef(null);
+  const clientId = import.meta.env.VITE_ADSENSE_CLIENT_ID;
+  const slotId = import.meta.env.VITE_ADSENSE_JOB_LIST_SLOT;
+  const enabled = import.meta.env.VITE_ADSENSE_ENABLED === "true";
+
+  useEffect(() => {
+    if (!enabled || !clientId || !slotId || !adRef.current) return;
+
+    if (adRef.current.dataset.adsenseRequested) return;
+
+    window.adsbygoogle = window.adsbygoogle || [];
+    window.adsbygoogle.push({});
+    adRef.current.dataset.adsenseRequested = "true";
+  }, [clientId, enabled, slotId]);
+
+  if (!enabled || !clientId || !slotId) return null;
 
   return (
-    <div className="google-ad-banner-card" onClick={() => window.open(ad.url, "_blank")}>
-      <div className="banner-ad-tag">
-        <span>Ads by Google</span>
-        <Info size={13} />
-      </div>
-
-      <div className="banner-content">
-        <img src={ad.image} alt={ad.sponsor} className="banner-ad-img" />
-        <div className="banner-text">
-          <div className="banner-sponsor">
-            <Sparkles size={13} color="#4285F4" /> {ad.sponsor}
-          </div>
-          <h4 className="banner-headline">{ad.headline}</h4>
-          <p className="banner-tagline">{ad.tagline}</p>
-        </div>
-        <button className="banner-cta-btn">
-          {ad.cta} <ExternalLink size={14} />
-        </button>
-      </div>
-    </div>
+    <ins
+      ref={adRef}
+      className="adsbygoogle job-list-ad"
+      style={{ display: "block" }}
+      data-ad-client={clientId}
+      data-ad-slot={slotId}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+      aria-label="Advertisement"
+    />
   );
 }

@@ -1,27 +1,4 @@
-import { Briefcase, Heart, MessageCircle } from "lucide-react";
-
-const socialLinks = [
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/jobvexia/",
-    Icon: () => <span className="social-text-icon">◎</span>,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/company/143917430/",
-    Icon: () => <span className="social-text-icon">in</span>,
-  },
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com/share/1Haav4nY1y/",
-    Icon: () => <span className="social-text-icon">f</span>,
-  },
-  {
-    label: "WhatsApp Channel",
-    href: "https://www.whatsapp.com/channel/0029VbDcfgvH5JLv7eSNwD23",
-    Icon: MessageCircle,
-  },
-];
+import { Briefcase, Heart } from "lucide-react";
 
 export default function Footer({ setActiveTab }) {
   return (
@@ -52,26 +29,6 @@ export default function Footer({ setActiveTab }) {
             Thousands of verified off-campus job &amp; internship listings
             updated daily.
           </p>
-
-          <div className="footer-social" aria-label="JOBVEX social channels">
-            <span>Follow JOBVEX</span>
-
-            <div className="social-links">
-              {socialLinks.map(({ label, href, Icon }) => (
-                <a
-                  key={label}
-                  className="social-link"
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`JOBVEX on ${label}`}
-                  title={label}
-                >
-                  <Icon size={18} aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className="footer-links-col">
@@ -100,16 +57,15 @@ export default function Footer({ setActiveTab }) {
           <ul>
             <li onClick={() => setActiveTab("about")}>About JOBVEX</li>
             <li onClick={() => setActiveTab("contact")}>Contact Support</li>
-            <li onClick={() => setActiveTab("about")}>
-              FAQ &amp; Safety Tips
-            </li>
+            <li onClick={() => setActiveTab("about")}>FAQ & Safety Tips</li>
+            <li onClick={() => setActiveTab("creator")}>Become a Creator</li>
           </ul>
         </div>
 
         <div className="footer-links-col">
           <h4>Legal &amp; Safety</h4>
           <ul>
-            <li>Terms &amp; Conditions</li>
+            <li>Terms & Conditions</li>
             <li>Privacy Policy</li>
             <li>Community Guidelines</li>
             <li>Recruiter Verification</li>

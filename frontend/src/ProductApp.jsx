@@ -10,7 +10,6 @@ import AdminPortal from "./Components/AdminPortal";
 import BlogSection from "./Components/BlogSection";
 import AboutContact from "./Components/AboutContact";
 import Footer from "./Components/Footer";
-import GoogleAdModal from "./Components/GoogleAdModal";
 import GoogleAdBanner from "./Components/GoogleAdBanner";
 import { Search } from "lucide-react";
 import toast from "react-hot-toast";
@@ -184,10 +183,6 @@ export default function ProductApp() {
   const [selectedType, setSelectedType] = useState("all");
   const [selectedJobModal, setSelectedJobModal] = useState(null);
 
-  // Google Ads State
-  const [pendingJobSelection, setPendingJobSelection] = useState(null);
-  const [showAdModal, setShowAdModal] = useState(false);
-
   const fetchJobs = async () => {
     try {
       const response = await axios.get(`${API_BASE_URL}/jobs`);
@@ -221,6 +216,18 @@ export default function ProductApp() {
     });
   }, []);
 
+  useEffect(() => {
+    const clientId = import.meta.env.VITE_ADSENSE_CLIENT_ID;
+    if (!clientId || document.querySelector("script[data-adsense-loader]")) return;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.dataset.adsenseLoader = "true";
+    script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(clientId)}`;
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+  }, []);
+
   // Add Job (Admin or Creator)
   const handleAddJob = async (newJobObj) => {
     try {
@@ -251,23 +258,11 @@ export default function ProductApp() {
     setJobs(jobs.filter((j) => j.id !== id));
   };
 
-  // Job selection with Google Ads playback trigger
-  const handleSelectJobWithAd = (job) => {
-    // Play Google Interstitial Ad before opening job details modal
-    setPendingJobSelection(job);
-    setShowAdModal(true);
-  };
-
-  const handleAdComplete = () => {
-    if (pendingJobSelection) {
-      // Increment views
-      const updated = {
-        ...pendingJobSelection,
-        views: (pendingJobSelection.views || 0) + 1
-      };
-      setSelectedJobModal(updated);
-    }
-    setPendingJobSelection(null);
+  const handleSelectJob = (job) => {
+    setSelectedJobModal({
+      ...job,
+      views: (job.views || 0) + 1,
+    });
   };
 
   const handleJobApplyClick = (job) => {
@@ -344,9 +339,9 @@ export default function ProductApp() {
                         <React.Fragment key={job.id}>
                           <JobCard
                             job={job}
-                            onSelectJob={handleSelectJobWithAd}
+                            onSelectJob={handleSelectJob}
                           />
-                          {/* Inject Google Ad Banner between job listings */}
+                          {/* Place the optional AdSense unit between listings */}
                           {idx === 1 && <GoogleAdBanner />}
                         </React.Fragment>
                       ))}
@@ -381,14 +376,6 @@ export default function ProductApp() {
           </>
         )}
       </main>
-
-      {/* Google Interstitial Ad Modal */}
-      <GoogleAdModal
-        key={showAdModal ? "open" : "closed"}
-        isOpen={showAdModal}
-        onClose={() => setShowAdModal(false)}
-        onAdComplete={handleAdComplete}
-      />
 
       {/* Job Details Modal for Candidates */}
       <JobDetailModal
